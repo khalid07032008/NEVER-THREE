@@ -1,8 +1,8 @@
 window.NT={
- address:'0x38CB52E4513B48CB7DA4f30D576BBe0FB42ad6fF',
+ address:'0x1Cc0F4609A2C7a263Db00E8c8327B8df36e6E392',
  owner:'0x8457e4659f3464B21951e34cd48A76938Cc74E86',
  cid:'bafybeiextg2mbqznbu5xnqgddc5k5oxxwfr2it3xbnfhk25f3t2bkxfigq',
- slugs:['common','rare','legendary'],prices:['0.0004','0.001','0.02'],caps:[1500n,500n,222n],
+ slugs:['common','rare','legendary'],prices:['0.0004','0.001','0.002'],caps:[1500n,500n,222n],
  abi:['function owner() view returns(address)','function treasury() view returns(address)','function cap(uint8) view returns(uint256)','function price(uint8) view returns(uint256)','function mintedByTier(uint256) view returns(uint256)','function saleActive() view returns(bool)','function mint(uint8,uint256) payable','function setSaleActive(bool)','event Minted(address indexed buyer,uint8 indexed tier,uint256 quantity,uint256 firstTokenId)'],
  async connect(){
   if(!window.ethereum?.request)throw Error('Open this page in your wallet browser or a browser with a wallet extension.');
